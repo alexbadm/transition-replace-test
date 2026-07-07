@@ -12,6 +12,7 @@
   transition-property: opacity;
 }
 
-.transitionNode {
+.transitionPrevNode {
   position: absolute;
+  pointer-events: none;
 }
