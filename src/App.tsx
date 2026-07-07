@@ -46,10 +46,14 @@ function App() {
         <button onClick={switchState}>switch</button>
       </section>
       <div className="spacer" />
-      <TransitionContainer hash={state}>
-        {state === "alpha" && <TestComponentAlpha />}
-        {state === "beta" && <TestComponentBeta />}
-        {state === "gamma" && <TestComponentGamma />}
+      <TransitionContainer duration={1600}>
+        {state === "alpha" ? (
+          <TestComponentAlpha key="alpha" />
+        ) : state === "beta" ? (
+          <TestComponentBeta key="beta" />
+        ) : (
+          <TestComponentGamma key="gamma" />
+        )}
       </TransitionContainer>
       <div className="spacer" />
       <section className="App-section">Another section with text</section>

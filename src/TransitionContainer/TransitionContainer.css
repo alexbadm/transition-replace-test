@@ -1,12 +1,17 @@
 .transitionContainer {
   position: relative;
+  overflow: hidden;
 
   transition-property: height;
 }
 
+.transitionPrevNode,
 .transitionNode {
   width: 100%;
 
-  opacity: 0;
   transition-property: opacity;
+}
+
+.transitionNode {
+  position: absolute;
 }
