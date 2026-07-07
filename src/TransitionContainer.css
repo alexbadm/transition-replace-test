@@ -1,0 +1,12 @@
+.transitionContainer {
+  position: relative;
+
+  transition-property: height;
+}
+
+.transitionNode {
+  width: 100%;
+
+  opacity: 0;
+  transition-property: opacity;
+}
